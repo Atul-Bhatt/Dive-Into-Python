@@ -1,1 +1,6 @@
 Put important notes here!
+
+Every Python function returns a value; if the function ever executes a return statement, it will return that value, otherwise it will return None, the Python null value.
+
+Reading the argument list from left to right, once you have a single named argument, the rest of the arguments must also be named.
+
