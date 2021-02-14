@@ -14,3 +14,64 @@ In reality, exceptions are implemented as classes, and this raise statement is a
 
 Modules are objects, and all modules have a built-in attribute __name__. A module’s __name__ depends on how you’re using the module. If you import the module, then __name__ is the module’s filename, But you can also run the module directly as a standalone program, in which case __name__ will be a special default value, __main__.
 
+Booleans are either True or False.
+Numbers can be integers (1 and 2), floats (1.1 and 1.2), fractions (1/2 and 2/3), or even complex numbers.
+Strings are sequences of Unicode characters, e.g. an html document.
+Bytes and byte arrays, e.g. a jpeg image file.
+Lists are ordered sequences of values.
+Tuples are ordered, immutable sequences of values.
+Sets are unordered bags of values.
+Dictionaries are unordered bags of key-value pairs.
+
+Due to some legacy issues left over from Python 2, booleans can be treated as numbers. True is 1; False is 0.
+
+Python 2 had separate types for int and long. The int datatype was limited by sys.maxint, which varied by platform but was usually 232-1. Python 3 has just one integer type, which behaves mostly like the old long type from Python 2. 
+
+Floating point numbers are accurate to 15 decimal places.
+
+When integer-dividing negative numbers, the // operator rounds “up” to the nearest integer. Mathematically speaking, it’s rounding “down” since −6 is less than −5, but it could trip you up if you were expecting it to truncate to −5.
+
+The math module has all the basic trigonometric functions, including sin(), cos(), tan(), and variants like asin().
+
+SLICING
+letters[start_pos:]
+letters[start_pos:end_pos]
+letters[:end_pos]
+letters[::step]
+letters[start_pos::step]
+letters[start_pos:end_pos:step]
+letters[:end_pos:step]
+
+>>> numbers[3:5] = ['three', 'four']
+>>> numbers
+['one', 1, 2, 'three', 'four', 5, 6, 7, 8, 9]
+>>> numbers[6:] = ['six']
+>>> numbers
+['one', 1, 2, 'three', 'four', 5, 'six']
+>>> numbers[2:3] = ['2.1', '2.2', '2.3', '..']
+>>> numbers
+['one', 1, '2.1', '2.2', '2.3', '..', 'three', 'four', 5, 'six']
+
+All list methods
+append()	Adds an element at the end of the list
+clear()	    Removes all the elements from the list
+copy()	    Returns a copy of the list
+count()	    Returns the number of elements with the specified value
+extend()	Add the elements of a list (or any iterable), to the end of the current list
+index()	    Returns the index of the first element with the specified value
+insert()	Adds an element at the specified position
+pop()	    Removes the element at the specified position
+remove()	Removes the first item with the specified value
+reverse()	Reverses the order of the list
+sort()	    Sorts the list
+
+A tuple is an immutable list. A tuple can not be changed in any way once it is created.
+
+Tuples are faster than lists. If you’re defining a constant set of values and all you’re ever going to do with it is iterate through it, use a tuple instead of a list.
+
+To create a tuple of one item, you need a comma after the value. Without the comma, Python just assumes you have an extra pair of parentheses, which is harmless, but it doesn’t create a tuple.
+
+To create an empty set, call set() with no arguments. variable = {} will create a dictionary.
+
+None is the only null value. It has its own datatype (NoneType). You can assign None to any variable, but you can not create other NoneType objects. All variables whose value is None are equal to each other.
+
