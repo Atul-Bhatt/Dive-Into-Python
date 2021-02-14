@@ -4,3 +4,13 @@ Every Python function returns a value; if the function ever executes a return st
 
 Reading the argument list from left to right, once you have a single named argument, the rest of the arguments must also be named.
 
+Many Python ides use the docstring to provide context-sensitive documentation, so that when you type a function name, its docstring appears as a tooltip. This can be incredibly helpful, but it’s only as good as the docstrings you write.
+
+sys.path.insert(0, new_path), you inserted a new directory as the first item of the sys.path list
+
+Python uses carriage returns to separate statements and a colon and indentation to separate code blocks. c++ and Java use semicolons to separate statements and curly braces to separate code blocks.
+
+In reality, exceptions are implemented as classes, and this raise statement is actually creating an instance of the ValueError class and passing the string 'number must be non-negative' to its initialization method.
+
+Modules are objects, and all modules have a built-in attribute __name__. A module’s __name__ depends on how you’re using the module. If you import the module, then __name__ is the module’s filename, But you can also run the module directly as a standalone program, in which case __name__ will be a special default value, __main__.
+
