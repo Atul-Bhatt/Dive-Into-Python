@@ -75,3 +75,13 @@ To create an empty set, call set() with no arguments. variable = {} will create 
 
 None is the only null value. It has its own datatype (NoneType). You can assign None to any variable, but you can not create other NoneType objects. All variables whose value is None are equal to each other.
 
+Very roughly speaking, the character encoding provides a mapping between the stuff you see on your screen and the stuff your computer actually stores in memory and on disk. 
+
+The most common encoding for these languages is CP-1252, also called “windows-1252” because it is widely used on Microsoft Windows. 
+
+Unicode is a system designed to represent every character from every language.
+
+In Python 2, the default encodeing for .py files was ASCII. In Python 3, the default encoding is UTF-8.
+
+
+
